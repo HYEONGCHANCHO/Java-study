@@ -2,7 +2,7 @@ package com.chan.webexam01.vo;
 
 public class DataVo {
 	private int age;
-	private String iname;
+	private String Iname;
 	private String address;
 	private String gender;
 	
@@ -13,7 +13,7 @@ public class DataVo {
 	public DataVo(int age, String iname, String address, String gender) {
 		super();
 		this.age = age;
-		this.iname = iname;
+		this.Iname = iname;
 		this.address = address;
 		this.gender = gender;
 	}
@@ -24,10 +24,10 @@ public class DataVo {
 		this.age = age;
 	}
 	public String getIname() {
-		return iname;
+		return Iname;
 	}
 	public void setIname(String iname) {
-		this.iname = iname;
+		this.Iname = iname;
 	}
 	public String getAddress() {
 		return address;
@@ -40,6 +40,10 @@ public class DataVo {
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+	@Override
+	public String toString() {
+		return "DataVo [age=" + age + ", iname=" + Iname + ", address=" + address + ", gender=" + gender + "]";
 	}
 	
 	
