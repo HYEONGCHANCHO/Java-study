@@ -54,6 +54,7 @@
 			
 			out.print("<li> 0001상품의 개수 :"+ resultList.get("0001") +"</li>");
 			out.print("<li> 0002상품의 개수 :"+ resultList.get("0002") +"</li>");
+			out.print("<li> 0003상품의 개수 :"+ resultList.get("0003") +"</li>");
 		}else{
 			out.print("<p>쿠키는 존재하지만 상품조회내역이 없습니다.</p>");
 		}

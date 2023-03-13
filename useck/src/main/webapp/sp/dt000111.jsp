@@ -18,21 +18,19 @@
 			}
 		}
 		if( isspviewlist ){
-			System.out.println(  getCookie.getName()  );
-			System.out.println("기존 쿠키값" +          getCookie.getValue() ); 
 			//위의 내용은 기존의 값을 콘솔창에 출력해 봤음...
-			getCookie.setValue(getCookie.getValue()+"/0002");
+			getCookie.setValue(getCookie.getValue()+"/0001");
+			getCookie.setMaxAge(3600*24*365);
 			getCookie.setPath("/");
 			response.addCookie(getCookie);
-			System.out.println( "추가된 쿠키값"   +       getCookie.getValue() ); 
 		}else{
-			Cookie cookie = new Cookie("spviewlist", "0002");
+			Cookie cookie = new Cookie("spviewlist", "0001");
 			cookie.setMaxAge(3600*24*30);
 			cookie.setPath("/");
 			response.addCookie(cookie);
 		}
 	}else{ //쿠키자체가 있는지 따진다. X :	
-		Cookie cookie = new Cookie("spviewlist", "0002");
+		Cookie cookie = new Cookie("spviewlist", "0001");
 		cookie.setMaxAge(3600*24*30);
 		cookie.setPath("/");
 		response.addCookie(cookie);
@@ -48,8 +46,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-<h1>의류 상품상세페이지 입니다....</h1>
-
+<h1>전자상품상세페이지 입니다....</h1>
 <script>
 	//여기에 jquery 코드 작성
 </script>
